@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  /* Your Primary Color */
+  /* --primary: #0077b6;  */
+  --primary: #62cbe4; 
+  /* Secondary/Accent Colors (derived to match the playful theme) */
+  --secondary: #e2ac58; 
+  --accent: #30d371; 
+  --accent-foreground: #000; 
+  --dark: #2D3436; 
+  --light: #FDF9FF; 
+  --accent-purple: #8e94f2;
+  --bg-color: #FDF9FF;
+  --text-main: #023047;
+  --text-muted: #64748b;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-light: var(--light);
+  --color-dark: var(--dark);
+  --color-accent-purple: var(--accent-purple);
+
+  --color-bg-color: var(--bg-color);
+  --color-text-main: var(--text-main);
+  --color-text-muted: var(--text-muted);
+
+}
+
+@font-face {
+  font-family: 'tajawal';
+  src: url('/fonts/tajawal.ttf') format(truetype);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'tajawal' !important;
+  scroll-behavior: smooth;
+
+  /* color: #848484 !important; */
+}
